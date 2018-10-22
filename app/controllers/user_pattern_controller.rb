@@ -1,0 +1,2 @@
+class UserPatternController < ApplicationController
+end
