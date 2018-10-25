@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
  
-  resources :users, only: [:index, :show]
-  resources :patterns, only: [:index, :show]
-
+  resources :users
+  resources :patterns
 
 end
