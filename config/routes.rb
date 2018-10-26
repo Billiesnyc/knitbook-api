@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
  
-  resources :users, only: [:index, :show, :update, :edit]
-  resources :patterns, only: [:index, :show]
+
+  resources :users
+  resources :patterns
   resources :favourites, only: [:edit, :update, :destroy, :create, :new]
 
 
