@@ -44,4 +44,5 @@ class PatternsController < ApplicationController
         params.require(:pattern).permit(:name, :image_url, :download_url, :difficulty, :size, :likes, :user_id)
       
       end
+
 end
