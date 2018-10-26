@@ -13,4 +13,15 @@ class PatternsController < ApplicationController
           render json: {error: 'Pattern failed to be created.'}, status: 400
         end
       end
+
+      def show
+        @pattern = Pattern.find_by(id: params[:id])
+        if @pattern
+          render json: @pattern
+        else
+          render json: {error: 'Pattern not found.'}, status: 404
+        end
+      end
+
+
 end
